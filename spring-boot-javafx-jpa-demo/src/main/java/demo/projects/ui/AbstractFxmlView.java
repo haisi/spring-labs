@@ -49,6 +49,7 @@ import org.springframework.context.ApplicationContextAware;
  */
 public abstract class AbstractFxmlView implements ApplicationContextAware {
 
+	public static final String DEFAULT_ENDING = "view";
 	protected ObjectProperty<Object> presenterProperty;
 	protected FXMLLoader fxmlLoader;
 	protected ResourceBundle bundle;
@@ -205,11 +206,11 @@ public abstract class AbstractFxmlView implements ApplicationContextAware {
 
 	static String stripEnding(String clazz) {
 
-		if (!clazz.endsWith("view")) {
+		if (!clazz.endsWith(DEFAULT_ENDING)) {
 			return clazz;
 		}
 
-		return clazz.substring(0, clazz.lastIndexOf("view"));
+		return clazz.substring(0, clazz.lastIndexOf(DEFAULT_ENDING));
 	}
 
 	/**
