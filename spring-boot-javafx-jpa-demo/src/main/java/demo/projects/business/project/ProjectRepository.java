@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package demo.projects.ui;
+package demo.projects.business.project;
 
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * @author Thomas Darimont
  */
-@Component
-public class ProjectsView extends AbstractFxmlView {}
+interface ProjectRepository extends JpaRepository<Project, Long> {
+
+}

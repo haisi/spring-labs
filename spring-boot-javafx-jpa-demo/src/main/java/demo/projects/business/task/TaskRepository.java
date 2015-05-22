@@ -13,20 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package demo.projects;
+package demo.projects.business.task;
 
 import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import demo.projects.business.project.Project;
 
 /**
  * @author Thomas Darimont
  */
-public interface ProjectService {
+public interface TaskRepository extends JpaRepository<Task, Long> {
 
-	List<Project> findAllProjects();
+	List<Task> findByProject(Project project);
 
-	List<Task> findAllTasksByProject(Project project);
-	
-	Task save(Task task);
-	
-	Project save(Project project);
 }

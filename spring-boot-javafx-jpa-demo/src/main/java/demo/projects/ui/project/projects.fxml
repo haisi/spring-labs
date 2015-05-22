@@ -7,7 +7,7 @@
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
 	minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
 	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="demo.projects.ui.ProjectsPresenter">
+	fx:controller="demo.projects.ui.project.ProjectsPresenter">
 	<children>
 		<TableView fx:id="projectsTable" prefHeight="169.0"
 			prefWidth="599.0">

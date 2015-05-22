@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package demo.projects;
+package demo.projects.business.project;
 
 import java.util.List;
 
@@ -22,6 +22,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import demo.projects.business.task.Task;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;

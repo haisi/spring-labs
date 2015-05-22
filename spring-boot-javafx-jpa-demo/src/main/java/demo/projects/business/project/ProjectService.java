@@ -13,10 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package demo.projects;
+package demo.projects.business.project;
 
 import java.util.List;
 
+import demo.projects.business.task.Task;
+import demo.projects.business.task.TaskRepository;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-class ProjectServiceImpl implements ProjectService {
+public class ProjectService {
 
 	private final ProjectRepository projectRepository;
 	private final TaskRepository taskRepository;

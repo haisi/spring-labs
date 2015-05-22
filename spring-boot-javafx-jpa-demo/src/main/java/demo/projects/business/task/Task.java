@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package demo.projects;
+package demo.projects.business.task;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -24,6 +24,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.PostLoad;
 
+import demo.projects.business.project.Project;
 import lombok.Data;
 
 /**

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package demo.projects.ui;
+package demo.projects.ui.project;
 
 import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
@@ -25,9 +25,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import demo.projects.Project;
-import demo.projects.ProjectService;
-import demo.projects.Task;
+import demo.projects.business.project.ProjectService;
+import demo.projects.business.project.Project;
+import demo.projects.business.task.Task;
 
 /**
  * @author Thomas Darimont
@@ -45,7 +45,8 @@ public class ProjectsPresenter {
 	@FXML TableColumn<Task, String> taskDescriptionColumn;
 	@FXML TableColumn<Task, Task.Status> taskStatusColumn;
 
-	@Autowired ProjectService projectTrackingService;
+	@Autowired
+	ProjectService projectTrackingService;
 
 	@FXML
 	public void initialize() {
